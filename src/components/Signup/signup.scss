@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #21453c;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 80vh;
+
+  .left {
+    width: 500px;
+    height: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    p {
+      width: 100%;
+      color: white;
+
+      span {
+        color: #2e9844;
+      }
+    }
+
+    .horizontal_logo {
+      width: 347.81px;
+      height: 42px;
+    }
+
+    span {
+      width: 100%;
+      color: #9f9f9f;
+    }
+  }
+  .right {
+    flex: 1;
+
+    .top {
+      // // background: url("../../assets/image.png");
+      // background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -29px;
+      z-index: -1;
+    }
+
+    .bottom {
+      width: 380px;
+      height: 482px;
+      top: 187px;
+      left: 760px;
+      padding: 40px 40px 40px 40px;
+      display: flex;
+      flex-direction: column;
+      column-gap: 18px;
+      background: #235e4a;
+      border-radius: 8px 8px 8px 8px;
+      z-index: 2;
+
+      h1 {
+        width: 300px;
+        height: 36px;
+        gap: 8px;
+        color: white;
+      }
+
+      .input {
+        width: 300px;
+        height: 76px;
+        top: 368px;
+        left: 800px;
+        display: flex;
+        flex-direction: column;
+        column-gap: 18px;
+
+        lable {
+          width: 32px;
+          height: 18px;
+          gap: 0px;
+          opacity: 0px;
+        }
+        input {
+          width: 300px;
+          height: 47px;
+          padding: 1px 12px 1px 1px;
+          gap: 0px;
+          border-radius: 4px 4px 4px 4px;
+          border: 1px 1px 1px 1px;
+        }
+
+        button {
+          background: #2e9844;
+          width: 300px;
+          height: 47px;
+          padding: 12px 16px 12px 16px;
+          gap: 10px;
+          border-radius: 4px 4px 4px 4px;
+          border: none;
+          cursor: pointer;
+        }
+
+        .google-btn {
+          width: 300px;
+          height: 47px;
+          background-color: transparent;
+          border-radius: 2px;
+          box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+          border: 1px solid white;
+          padding: 1px 12px 1px 1px;
+          gap: 0px;
+          border-radius: 4px 4px 4px 4px;
+          .google-icon-wrapper {
+            position: absolute;
+            margin-top: 1px;
+            margin-left: 1px;
+            width: 40px;
+            height: 40px;
+            border-radius: 2px;
+          }
+          .google-icon {
+            position: absolute;
+            margin-top: 11px;
+            margin-left: 11px;
+            width: 18px;
+            height: 18px;
+          }
+          .btn-text {
+            color: white;
+            padding-left: 2.5rem;
+            margin: 11px 11px 0 0;
+            font-size: 14px;
+            letter-spacing: 0.2px;
+          }
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=Roboto:500);
+      }
+    }
+  }
+}
